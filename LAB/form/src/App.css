@@ -1,0 +1,64 @@
+.addblock{
+    border: 4px solid #0000FF;
+    width: 300px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 50px;
+    
+}
+input{
+    background-color: rgba(255,255,255,0);
+    border: none;
+    border-bottom: 3px solid #0000FF;
+    color: white;
+
+}
+.App{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainblock{
+    width: 1400px;
+    height: 700px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 150px 150px 150px 150px;
+    gap: 50px;
+    overflow-y: scroll;
+
+}
+.addbutton{
+    border: 3px solid #0000FF;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0,0,255,0.2);
+    
+}
+.addbuttoncolumn{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.descriptionwritten{
+    width: 170px;
+    height: 40px;
+    border: 5px sold white;
+    overflow-y: scroll;
+    overflow-x: none;
+    
+}

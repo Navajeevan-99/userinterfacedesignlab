@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Login Demo</title>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #userInfo {
+      margin-top: 20px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Login with Google</h2>
+
+  <div id="g_id_onload"
+       data-client_id="YOUR_GOOGLE_CLIENT_ID"
+       data-callback="handleCredentialResponse"
+       data-auto_prompt="false">
+  </div>
+
+  <div class="g_id_signin"
+       data-type="standard"
+       data-size="large"
+       data-theme="outline"
+       data-text="sign_in_with"
+       data-shape="rectangular"
+       data-logo_alignment="left">
+  </div>
+
+  <div id="userInfo"></div>
+
+  <script>
+    function handleCredentialResponse(response) {
+      // JWT token from Google
+      const idToken = response.credential;
+
+      // Decode the JWT to extract user information
+      const payload = JSON.parse(atob(idToken.split('.')[1]));
+      console.log(payload);
+
+      document.getElementById("userInfo").innerHTML =
+        `<h3>Welcome, ${payload.name}</h3><p>Email: ${payload.email}</p>`;
+    }
+  </script>
+</body>
+</html>

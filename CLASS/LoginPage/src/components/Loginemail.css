@@ -1,0 +1,53 @@
+.formborder{
+    width: 400px;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    border: 3px solid violet;
+    border-radius: 30px;
+    color: violet;
+    box-shadow: 20px 20px 20px rgba(255,255,255,0.1);
+}
+.input{
+    border: 2px solid violet;
+    border-radius: 10px;
+    color: violet;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial,sans-serif;
+    background-color:rgba(255,255,255,0.1) ;
+}
+.button{
+    background-color: rgba(255,255,255,0.1);
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: violet;
+    border: 3px solid violet;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 120px;
+
+}
+#google{
+    border: 2px solid violet;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+}
+#option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#icon{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 40px;
+}
